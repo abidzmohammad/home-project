@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+button.btn {
+    padding: 12px 24px;
+    color: #fff;
+    background: rgb(240, 132, 92);
+    border: none;
+    cursor: pointer;
+}
+
+nav.menu {
+    background: rgb(240, 132, 92);
+    height: 49px;
+}
+
+.menu .logo {
+    float: left;
+    padding: 11px;
+    color: #fff;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+header .menu ul li {
+    display: inline-block;
+}
+
+header .menu ul {
+    float: right;
+}
+
+header .menu ul li a {
+    display: block;
+    padding: 15px;
+    background: rgb(240, 132, 92);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .menu ul li a:hover {
+    background: rgb(235, 116, 48);
+}
+
+
+/* Banner */
+
+header .banner {
+    background: url('imgs/lake.jpg') no-repeat center left/cover;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+header .banner::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(24, 24, 23);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .6;
+}
+
+.banner-content {
+    padding-top: 220px;
+    z-index: 5;
+}
+
+header .banner-title {
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    clear: both;
+}
+
+.banner-content p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 30px 0;
+}
